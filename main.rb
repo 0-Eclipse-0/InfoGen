@@ -24,11 +24,11 @@ real_gender = true
 # Start of program
 print "Enter the gender: " # Gender selection
 gender = gets.chomp;
-if gender == "Female" or gender == "female" or gender == "girl" or gender == "lady" or gender == "f" or gender == "g" # Female route
+if gender == "Female" or gender == "female" or gender == "girl" or gender == "Girl" or gender == "lady" or gender == "Lady" or gender == "f" or gender == "F" or gender == "g" or gender == "G" # Female route
   name = "#{random_first_name_girls} #{random_last_name}"
   date = "#{random_month}/#{random_day}/#{random_year}"
   gender = "Female"
-elsif gender == "Male" or gender == "male" or gender == "guy" or gender =="boy" or gender == "m" or gender == "b" # Male route
+elsif gender == "Male" or gender == "male" or gender == "guy" or gender == "Guy" or gender =="boy" or gender == "Boy" or gender == "m" or gender == "M" or gender == "b" or gender == "B" # Male route
   name = "#{random_first_name_boys} #{random_last_name}"
   date = "#{random_month}/#{random_day}/#{random_year}"
   gender = "Male"
