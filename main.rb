@@ -1,6 +1,8 @@
 $LOAD_PATH << '.'
+require 'colorize'
 require 'modules/name.rb'
 require 'modules/info.rb'
+require 'modules/messages.rb'
 
 #----------------------------------------#
 #-----------------Random-----------------#
@@ -9,11 +11,7 @@ require 'modules/info.rb'
 #----------------------------------------#
 
 # Welcome message
-puts "|----------------------------------------|"
-puts "|-----------------Random-----------------|"
-puts "|---------------Information--------------|"
-puts "|----------------Generator---------------|"
-puts "|----------------------------------------|"
+puts Messages.intro
 
 # Arrays
 @first_names_girls = ["Emma","Olivia", "Ava", "Sophia", "Mia", "Charlotter", "Amelia", "Harper", "Abigail", "Jesse", "Emily", "Madison", "Ella", "Lily", "Avery", "Evelyn", "Sofia", "Aria", "Riley", "Chloe", "Scarlett", "Ellie", "Elizabeth", "Aubrey", "Layla", "Grace", "Zoey", "Mila", "Addison", "Hannah", "Victoria", "Brooklyn", "Zoe", "Penelope", "Lucy", "Baby", "Audrey", "Natalie", "Nora", "Stella", "Skylar"] # First name array (Girls)
@@ -56,37 +54,13 @@ when "Male", "male", "guy", "Guy", "boy", "Boy", "m", "M", "b", "B" # Male route
   name = Name.boy(random_first_name_boys, random_last_name)
   gender = "Male"
 else
-  print "\n"
-  puts "Unknown gender please enter one of the"
-  puts "genders listed in the genders.txt file."
+  Messages.error2
   real_gender = false
 end
 
 # Program Output
 if real_gender == true
-  print "\n|---Information Output---|\n"
-  print "Name: #{name} \n"
-  print "Birthday: #{date} \n"
-  print "Height: #{height} \n"
-  print "Address: #{address} \n"
-  print "Gender: #{gender} \n"
-  print "|------------------------|"
-  file = File.new("info.out", "w")
-  file.puts "|---Information Output---|"
-  file.puts "Name: #{name} "
-  file.puts "Birthday: #{date} "
-  file.puts "Height: #{height}"
-  file.puts "Address: #{address}"
-  file.puts "Gender: #{gender} "
-  file.puts "|------------------------|"
+  puts Messages.info(name, date, height, address, gender)
 elsif real_gender == false
-  puts "An error occured, please make sure you"
-  puts "chose a real gender. Check genders.txt"
-  puts "to see which aliases are compatible with"
-  puts "the program!"
-  file = File.new("info.out", "w")
-  file.puts "An error occured, please make sure you"
-  file.puts "chose a real gender. Check genders.txt"
-  file.puts "to see which aliases are compatible with"
-  file.puts "the program!"
+  puts Messages.error1
 end
