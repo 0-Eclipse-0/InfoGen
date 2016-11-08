@@ -1,0 +1,14 @@
+#============================#
+Male Aliases:
+               - Male or male
+               - M or m
+               - Guy or guy
+               - Boy or boy
+               - B or b
+Female Aliases:
+               -
+               - F or f
+               - Girl or girl
+               - Lady or lady
+               - G or g
+#============================#
