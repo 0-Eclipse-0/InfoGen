@@ -29,7 +29,7 @@ random_last_name = @last_names.sample # Random last name variable
 real_gender = true
 
 # Start of program
-print "Enter the Gender (Default: Female)>>> " # Gender selection
+print "\nEnter the Gender [Default: Female]>>> " # Gender selection
 gender = gets.chomp;
 case gender
 when "Female", "female", "girl", "Girl", "lady", "Lady", "f", "F", "g", "G" # Female route
@@ -60,15 +60,30 @@ end
 
 # Program Output
 if real_gender == true
-  print "\n|---Information Output---|\n"
-  print "Name: #{name} \n"
-  print "Birthday: #{date} \n"
-  print "Gender: #{gender} \n"
-  print "|------------------------|"
+  print "\n[Line Written to File] |---Information Output---|\n"
+  print "[Line Written to File] Name: #{name} \n"
+  print "[Line Written to File] Birthday: #{date} \n"
+  print "[Line Written to File] Gender: #{gender} \n"
+  print "[Line Written to File] |------------------------|"
+  file = File.new("info.out", "w")
+  file.puts "|---Information Output---|"
+  file.puts "Name: #{name} "
+  file.puts "Birthday: #{date} "
+  file.puts "Gender: #{gender} "
+  file.puts "|------------------------|"
 elsif real_gender == false
-  print "\n|---Information Output---|\n"
-  print "Name: N/A \n"
-  print "Birthday: N/A \n"
-  print "Gender: N/A \n"
-  print "|------------------------|"
+  print "\n"
+  print "[Line Written to File] "
+  puts "An error occured, please make sure you"
+  print "[Line Written to File] "
+  puts "chose a real gender. Check genders.txt"
+  print "[Line Written to File] "
+  puts "to see which aliases are compatible with"
+  print "[Line Written to File] "
+  puts "the program!"
+  file = File.new("info.out", "w")
+  file.puts "An error occured, please make sure you"
+  file.puts "chose a real gender. Check genders.txt"
+  file.puts "to see which aliases are compatible with"
+  file.puts "the program!"
 end
