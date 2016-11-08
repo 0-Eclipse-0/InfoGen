@@ -33,13 +33,24 @@ print "Enter the Gender (Default: Female)>>> " # Gender selection
 gender = gets.chomp;
 case gender
 when "Female", "female", "girl", "Girl", "lady", "Lady", "f", "F", "g", "G" # Female route
-  name = "#{random_first_name_girls} #{random_last_name}"
-  date = "#{random_month}/#{random_day}/#{random_year}"
+  def name(first, last)
+    return "#{first} #{last}"
+  end
+  def date(month, day, year)
+    return "#{month}/#{day}/#{year}"
+  end
+  name = name(random_first_name_girls, random_last_name)
+  date = date(random_month, random_day, random_year)
   gender = "Female"
 when "Male", "male", "guy", "Guy", "boy", "Boy", "m", "M", "b", "B" # Male route
-  name = "#{random_first_name_boys} #{random_last_name}"
-  date = "#{random_month}/#{random_day}/#{random_year}"
-  gender = "Male"
+  def name(first, last)
+    return "#{first} #{last}"
+  end
+  def date(month, day, year)
+    return "#{month}/#{day}/#{year}"
+  end
+  name = name(random_first_name_boys, random_last_name)
+  date = date(random_month, random_day, random_year)
 else
   print "\n"
   puts "Unknown gender please enter one of the"
