@@ -29,29 +29,22 @@ random_last_name = @last_names.sample # Random last name variable
 real_gender = true
 
 # Start of program
-print "Enter the Gender>>> " # Gender selection
+print "Enter the Gender (Default: Female)>>> " # Gender selection
 gender = gets.chomp;
-if gender == "Female" or gender == "female" or gender == "girl" or gender == "Girl" or gender == "lady" or gender == "Lady" or gender == "f" or gender == "F" or gender == "g" or gender == "G" # Female route
+case gender
+when "Female", "female", "girl", "Girl", "lady", "Lady", "f", "F", "g", "G" # Female route
   name = "#{random_first_name_girls} #{random_last_name}"
   date = "#{random_month}/#{random_day}/#{random_year}"
   gender = "Female"
-elsif gender == "Male" or gender == "male" or gender == "guy" or gender == "Guy" or gender =="boy" or gender == "Boy" or gender == "m" or gender == "M" or gender == "b" or gender == "B" # Male route
+when "Male", "male", "guy", "Guy", "boy", "Boy", "m", "M", "b", "B" # Male route
   name = "#{random_first_name_boys} #{random_last_name}"
   date = "#{random_month}/#{random_day}/#{random_year}"
   gender = "Male"
-else
-  real_gender = false
-  puts "\nUnknown gender please enter one of the"
-  puts "genders listed in the genders.txt file.\n"
 end
 
 # Program Output
-if real_gender == true
-  print "\n|---Information Output---|\n"
-  print "Name: #{name} \n"
-  print "Birthday: #{date} \n"
-  print "Gender: #{gender} \n"
-  print "|------------------------|"
-else
-  puts "\nGoodbye!"
-end
+print "\n|---Information Output---|\n"
+print "Name: #{name} \n"
+print "Birthday: #{date} \n"
+print "Gender: #{gender} \n"
+print "|------------------------|"
