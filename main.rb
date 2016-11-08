@@ -1,6 +1,6 @@
 $LOAD_PATH << '.'
-require 'name.rb'
-require 'info.rb'
+require 'modules/name.rb'
+require 'modules/info.rb'
 
 #----------------------------------------#
 #-----------------Random-----------------#
