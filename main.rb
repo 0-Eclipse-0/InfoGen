@@ -4,6 +4,13 @@
 #----------------Generator---------------#
 #----------------------------------------#
 
+# Welcome message
+puts "#----------------------------------------#"
+puts "#-----------------Random-----------------#"
+puts "#---------------Information--------------#"
+puts "#----------------Generator---------------#"
+puts "#----------------------------------------#"
+
 # Arrays
 @days = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25] # Days array
 @months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12] # Months array
@@ -22,7 +29,7 @@ random_last_name = @last_names.sample # Random last name variable
 real_gender = true
 
 # Start of program
-print "Enter the gender: " # Gender selection
+print "Enter the Gender>>> " # Gender selection
 gender = gets.chomp;
 if gender == "Female" or gender == "female" or gender == "girl" or gender == "Girl" or gender == "lady" or gender == "Lady" or gender == "f" or gender == "F" or gender == "g" or gender == "G" # Female route
   name = "#{random_first_name_girls} #{random_last_name}"
