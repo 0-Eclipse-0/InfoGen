@@ -40,11 +40,24 @@ when "Male", "male", "guy", "Guy", "boy", "Boy", "m", "M", "b", "B" # Male route
   name = "#{random_first_name_boys} #{random_last_name}"
   date = "#{random_month}/#{random_day}/#{random_year}"
   gender = "Male"
+else
+  print "\n"
+  puts "Unknown gender please enter one of the"
+  puts "genders listed in the genders.txt file."
+  real_gender = false
 end
 
 # Program Output
-print "\n|---Information Output---|\n"
-print "Name: #{name} \n"
-print "Birthday: #{date} \n"
-print "Gender: #{gender} \n"
-print "|------------------------|"
+if real_gender == true
+  print "\n|---Information Output---|\n"
+  print "Name: #{name} \n"
+  print "Birthday: #{date} \n"
+  print "Gender: #{gender} \n"
+  print "|------------------------|"
+elsif real_gender == false
+  print "\n|---Information Output---|\n"
+  print "Name: N/A \n"
+  print "Birthday: N/A \n"
+  print "Gender: N/A \n"
+  print "|------------------------|"
+end
