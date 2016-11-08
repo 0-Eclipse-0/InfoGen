@@ -1,5 +1,4 @@
 $LOAD_PATH << '.'
-require 'colorize'
 require 'modules/name.rb'
 require 'modules/info.rb'
 require 'modules/messages.rb'
