@@ -2,9 +2,9 @@ module Command_messages
   def Command_messages.info
     puts "\nName: InfoGen"
     puts "Author: Eclipse"
-    puts "Version: 1.0"
+    puts "Version: 1.0.5"
     puts "Release Date: 11/8"
-    puts "Update Date: 11/8"
+    puts "Update Date: 11/26"
   end
   def Command_messages.help
     puts "\nStart: The command that starts the actual program."
