@@ -1,0 +1,9 @@
+Ave
+Blvd
+Ct
+Dr
+St
+Rd
+Ln
+Way
+Terr

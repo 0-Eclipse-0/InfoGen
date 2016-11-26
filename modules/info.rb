@@ -8,4 +8,7 @@ module Info
   def Info.address(number, name, type)
     return "#{number} #{name}, #{type}."
   end
+  def Info.weight(pounds, ounces)
+    return "#{pounds} pounds #{ounces} ounces"
+  end
 end
