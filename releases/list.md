@@ -14,7 +14,7 @@
 
 ### Version 1.0.3
 **Summary**
-> Put arrays into text files to shorten code.
+> Put arrays into text files to shorten code. Added commands.
 
 **Info**
 
