@@ -1,2 +1,2 @@
 # InfoGen
-Random information generator for Ruby!
+> Stop, go, InfoGen.
