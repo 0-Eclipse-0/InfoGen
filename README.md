@@ -1,6 +1,8 @@
 # InfoGen
 ## Info
 
+[![Join the chat at https://gitter.im/0-Eclipse-0/InfoGen](https://badges.gitter.im/0-Eclipse-0/InfoGen.svg)](https://gitter.im/0-Eclipse-0/InfoGen?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Versions
 
 ## Requirements
