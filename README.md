@@ -1,2 +1,2 @@
 # InfoGen
-> Stop, go, InfoGen.
+> "Stop, go, InfoGen."
