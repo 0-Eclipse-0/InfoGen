@@ -18,5 +18,6 @@
 #### Wercker Status
 [![wercker status](https://app.wercker.com/status/9e0bc54c43f48d220aec684fffb2b110/s/master "wercker status")](https://app.wercker.com/project/byKey/9a8016091a3a2e5390695e5a7ea172dd)
 ### Chat
+[![Gitter](https://badges.gitter.im/0-Eclipse-0/InfoGen.svg)](https://gitter.im/0-Eclipse-0/InfoGen?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 ### Commits
