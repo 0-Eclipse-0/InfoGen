@@ -1,2 +1,5 @@
 language: ruby
-script: ruby main.rb && start && f
+script: 
+- ruby main.rb 
+- start 
+- f
