@@ -1,10 +1,10 @@
 # **InfoGen**
 ## **Info**
-**Name**: InfoGen
-**Author**: 0-Eclipse-0
-**Version**: 1.0.5
-**Release Date**: 11/8/16
-**Update Date**: 11/29/16
+- **Name**: InfoGen
+- **Author**: 0-Eclipse-0
+- **Version**: 1.0.5
+- **Release Date**: 11/8/16
+- **Update Date**: 11/29/16
 
 ## **Versions**
 - 1.0
