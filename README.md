@@ -2,13 +2,19 @@
 ## **Info**
 
 ## **Versions**
-
+- 1.0
+- 1.0.1
+- 1.0.2
+- 1.0.3
+- 1.0.4
+- 1.0.5
 ## **Requirements**
-
+- Ruby 2.x or 3.x
 ## **Release Notes**
-
+- Code shortening
+- Array creation script
 ## **Contributors**
-
+- 0-Eclipse-0
 ## **Other**
 ### **Status**
 ##### **Semaphore Status**
